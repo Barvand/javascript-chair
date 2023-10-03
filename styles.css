@@ -87,3 +87,20 @@ body {
         border: solid 2px black;
         cursor: pointer;
     }
+
+    .total-price {
+        color: red;
+    }
+    
+    .buy-now-btn {
+        background-color: grey;
+        color: white;
+        width: 100px;
+        padding: 10px 20px 10px 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .buy-now-btn:hover {
+        background-color: #744F25;
+    }

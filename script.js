@@ -1,26 +1,41 @@
 
 
 
+var chairs = [mapleChair, oakChair, ashChair, beechChair]; 
 
-let hour = 19; 
-
-
-if (hour >= 6 && hour < 12)
-    console.log("Good morning"); 
-if (hour >=12 && hour < 18)
-console.log ("Good afternoon!");
-else 
-    console.log ("Good evening");
-
-
-
-const chair = {
+var mapleChair = {
     brand: "Ikea", 
     legs: 4, 
     wheels: false,
     ergonomic: true, 
     woodType : ["oak", "maple", "ash", "beech"] 
 }
+
+var oakChair = {
+    brand: "Ikea", 
+    legs: 4, 
+    wheels: true,
+    ergonomic: true, 
+    woodType : ["oak", "maple", "ash", "beech"] 
+}
+
+var ashChair = {
+    brand: "Ikea", 
+    legs: 4, 
+    wheels: true,
+    ergonomic: true, 
+    woodType : ["oak", "maple", "ash", "beech"] 
+}
+
+
+var beechChair = {
+    brand: "Ikea", 
+    legs: 4, 
+    wheels: true,
+    ergonomic: true, 
+    woodType : ["oak", "maple", "ash", "beech"] 
+}
+
 
 // function will be to select the type of wood you would like your chair to be and display in the corresponding colours. 
 
@@ -37,8 +52,8 @@ oakButton.onclick = function () {
     price.innerHTML = "$70"
     var title = document.querySelector(".title-chair")
     title.innerHTML = "Oakley chair"
-
-    
+    var totalPrice = document.querySelector(".total-price")
+    totalPrice.innerHTML ="Total price: $70"
 }
 
 // This makes the MAPLE button display the MAPLE colour of the product. 
@@ -52,6 +67,8 @@ mapleButton.onclick = function () {
     title.innerHTML = "Mapley chair"
     var price = document.querySelector(".price")
     price.innerHTML = "$79.99"
+    var totalPrice = document.querySelector(".total-price")
+    totalPrice.innerHTML ="Total price: $79.99"
 }
 // This makes the ASH button display the ASH colour of the product. 
 
@@ -64,6 +81,8 @@ ashButton.onclick = function () {
     title.innerHTML = "Ashley chair"
     var price = document.querySelector(".price")
     price.innerHTML = "$84.99"
+    var totalPrice = document.querySelector(".total-price")
+    totalPrice.innerHTML ="Total price: $84.99"
     
     }
 
@@ -81,14 +100,9 @@ beechButton.onclick = function () {
     title.innerHTML = "Beechley chair"
     var price = document.querySelector(".price")
     price.innerHTML = "$99"
+    var totalPrice = document.querySelector(".total-price")
+    totalPrice.innerHTML ="Total price: $99"
 }
-
-
-
-
-
-
-
 
 
 // Colourpicker under the OAK icon to change colour of product to corresponding colour 
@@ -101,6 +115,8 @@ colorSelector.onclick = function() {
     title.innerHTML = "Oakley chair"
     var price = document.querySelector(".price")
     price.innerHTML = "$70"
+    var totalPrice = document.querySelector(".total-price")
+    totalPrice.innerHTML ="Total price: $70"
     
 }
 
@@ -115,7 +131,8 @@ colorSelector.onclick = function() {
     title.innerHTML = "Mapley chair"
     var price = document.querySelector(".price")
     price.innerHTML = "$79.99"
-    
+    var totalPrice = document.querySelector(".total-price")
+    totalPrice.innerHTML ="Total price: $79.99"
 } 
 
 
@@ -128,7 +145,8 @@ colorSelector.onclick = function() {
     title.innerHTML = "Ashley chair"
     var price = document.querySelector(".price")
     price.innerHTML = "$84.99"
-      
+    var totalPrice = document.querySelector(".total-price")
+    totalPrice.innerHTML ="Total price: $84.99"
 } 
 
 // Colourpicker under the  BEECH icon to change colour of product to corresponding colour 
@@ -141,4 +159,14 @@ colorSelector.onclick = function() {
     title.innerHTML = "Beechley chair"
     var price = document.querySelector(".price")
     price.innerHTML = "$99"
+    var totalPrice = document.querySelector(".total-price")
+    totalPrice.innerHTML ="Total price: $99"
+}
+
+
+var quanitity = document.querySelector(".beech")
+quanitity.onclick  = function () {
+    quanitity = 0; 
+if (quanitity <1) 
+    alert("Out of stock, maple is also nice")
 }
