@@ -164,6 +164,7 @@ colorSelector.onclick = function() {
 }
 
 
+// out of stock 
 var quanitity = document.querySelector(".beech")
 quanitity.onclick  = function () {
     quanitity = 0; 
